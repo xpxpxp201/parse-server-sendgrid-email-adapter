@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/theashraf/parse-server-sendgrid-email-adapter#readme",
   "dependencies": {
-    "@sendgrid/mail": "6.3.1"
+    "@sendgrid/mail": "^7.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "7.1.2",
