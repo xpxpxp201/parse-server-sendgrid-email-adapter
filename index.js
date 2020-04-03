@@ -4,7 +4,8 @@ module.exports = ({
   apiKey,
   from,
   passwordResetEmailTemplate,
-  verificationEmailTemplate
+  verificationEmailTemplate,
+  hideWarnings
 }) => {
   if (!apiKey || !from)
     throw "SendGridAdapter requires an API Key && from Email Address";
@@ -28,7 +29,8 @@ module.exports = ({
       subject,
       html,
       templateId,
-      dynamic_template_data
+      dynamic_template_data,
+      hideWarnings
     };
     return sgMail.send(mail);
   };
